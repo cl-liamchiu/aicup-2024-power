@@ -14,6 +14,16 @@ conda create -n ai_cup python=3.9.20
 pip install -r requirements.txt
 ```
 
+## 資料集和模型下載
+請至 https://drive.google.com/file/d/1WTrm04yuj9DASytSQ3mkXry0PCUGGaYq/view?usp=sharing 下載資料集和模型，並將其解壓縮至專案根目錄。
+
+或者利用 gdown 下載後解壓縮
+```bash
+pip install gdown
+gdown https://drive.google.com/uc?id=1WTrm04yuj9DASytSQ3mkXry0PCUGGaYq
+unzip data_and_model.zip
+```
+
 ## 資料夾說明
 - `data/`：放置資料集，含原始資料集、外部資料以及預處理後的資料集
 - `data_analysis/`：放置資料分析以及繪圖的程式碼
@@ -27,8 +37,10 @@ pip install -r requirements.txt
 
 ```bash
 cd train_model
+# 訓練模型
 python main.py --stage=train --is72250=True
 python main.py --stage=train
+# 測試模型
 python main.py --stage=test --is72250=True
 python main.py --stage=test
 ```
