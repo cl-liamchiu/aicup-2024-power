@@ -12,15 +12,16 @@ conda create -n ai_cup python=3.9.20
 安裝相依套件
 ```bash
 pip install -r requirements.txt
+pip install torch==2.4.1 --index-url https://download.pytorch.org/whl/cu118
 ```
 
 ## 資料集和模型下載
-請至 https://drive.google.com/file/d/1WTrm04yuj9DASytSQ3mkXry0PCUGGaYq/view?usp=sharing 下載資料集和模型，並將其解壓縮至專案根目錄。
+請至 https://drive.google.com/file/d/1zKq21xbNYOUwx7CXPpDrUjYUwjQkdkmy/view?usp=sharing 下載資料集和模型，並將其解壓縮至專案根目錄。
 
 或者利用 gdown 下載後解壓縮
 ```bash
 pip install gdown
-gdown https://drive.google.com/uc?id=1WTrm04yuj9DASytSQ3mkXry0PCUGGaYq
+gdown https://drive.google.com/uc?id=1zKq21xbNYOUwx7CXPpDrUjYUwjQkdkmy
 unzip data_and_model.zip
 ```
 
