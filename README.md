@@ -1,6 +1,7 @@
 # AI CUP 2024 秋季賽 根據區域微氣候資料預測發電量競賽
 
 隊伍：TEAM_6011
+
 Private leaderboard：507376.3 / Rank 11
 
 ## 環境建置
